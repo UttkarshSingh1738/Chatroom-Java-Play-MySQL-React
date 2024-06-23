@@ -7,77 +7,41 @@ import play.api.mvc.Call
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:6
+// @LINE:5
 package controllers {
 
-  // @LINE:63
-  class ReverseAssets(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:63
-    def versioned(file:String): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[String]].unbind("file", file))
-    }
-  
-  }
-
-  // @LINE:59
-  class ReverseCountController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:59
-    def count: Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "count")
-    }
-  
-  }
-
-  // @LINE:6
+  // @LINE:5
   class ReverseHomeController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:11
+    // @LINE:7
     def save(): Call = {
       
-      Call("POST", _prefix + { _defaultPrefix } + "save")
+      Call("POST", _prefix + { _defaultPrefix } + "api/save")
     }
   
     // @LINE:8
+    def authenticate(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "api/authenticate")
+    }
+  
+    // @LINE:6
     def register(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "register")
     }
   
-    // @LINE:14
-    def authenticate(): Call = {
-      
-      Call("POST", _prefix + { _defaultPrefix } + "auth")
-    }
-  
-    // @LINE:43
-    def appSummary: Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "api/summary")
-    }
-  
-    // @LINE:16
+    // @LINE:9
     def logout(): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "logout")
+      Call("GET", _prefix + { _defaultPrefix } + "api/logout")
     }
   
-    // @LINE:6
+    // @LINE:5
     def index(): Call = {
       
       Call("GET", _prefix)
@@ -85,77 +49,56 @@ package controllers {
   
   }
 
-  // @LINE:61
-  class ReverseAsyncController(_prefix: => String) {
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:61
-    def message: Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + "message")
-    }
-  
-  }
-
-  // @LINE:18
+  // @LINE:10
   class ReverseChatroomController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:27
+    // @LINE:13
     def destroy(): Call = {
       
-      Call("POST", _prefix + { _defaultPrefix } + "chatroom/delete/")
+      Call("POST", _prefix + { _defaultPrefix } + "api/chatroom/delete")
     }
   
-    // @LINE:29
+    // @LINE:14
     def userMessages(): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "chatroom/userMessages")
+      Call("POST", _prefix + { _defaultPrefix } + "api/chatroom/userMessages")
     }
   
-    // @LINE:21
+    // @LINE:11
     def send(): Call = {
       
-      Call("POST", _prefix + { _defaultPrefix } + "chatroom/send")
+      Call("POST", _prefix + { _defaultPrefix } + "api/chatroom/send")
     }
   
-    // @LINE:24
+    // @LINE:12
     def update(): Call = {
       
-      Call("POST", _prefix + { _defaultPrefix } + "chatroom/update/")
+      Call("POST", _prefix + { _defaultPrefix } + "api/chatroom/update")
     }
   
-    // @LINE:18
+    // @LINE:10
     def index(): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "chatroom")
+      Call("GET", _prefix + { _defaultPrefix } + "api/chatroom")
     }
   
   }
 
-  // @LINE:40
-  class ReverseFrontendController(_prefix: => String) {
+  // @LINE:17
+  class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:40
-    def index(): Call = {
+    // @LINE:17
+    def versioned(file:String): Call = {
       
-      Call("GET", _prefix)
-    }
-  
-    // @LINE:46
-    def assetOrDefault(file:String): Call = {
-      
-      Call("GET", _prefix + { _defaultPrefix } + implicitly[play.api.mvc.PathBindable[String]].unbind("file", file))
+      Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[String]].unbind("file", file))
     }
   
   }

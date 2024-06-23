@@ -7,50 +7,10 @@ import play.api.routing.JavaScriptReverseRoute
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:6
+// @LINE:5
 package controllers.javascript {
 
-  // @LINE:63
-  class ReverseAssets(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:63
-    def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.Assets.versioned",
-      """
-        function(file0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("file", file0)})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:59
-  class ReverseCountController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:59
-    def count: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.CountController.count",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "count"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:6
+  // @LINE:5
   class ReverseHomeController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -58,17 +18,27 @@ package controllers.javascript {
     }
 
   
-    // @LINE:11
+    // @LINE:7
     def save: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.save",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "save"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "api/save"})
         }
       """
     )
   
     // @LINE:8
+    def authenticate: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.authenticate",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "api/authenticate"})
+        }
+      """
+    )
+  
+    // @LINE:6
     def register: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.register",
       """
@@ -78,37 +48,17 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:14
-    def authenticate: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.authenticate",
-      """
-        function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "auth"})
-        }
-      """
-    )
-  
-    // @LINE:43
-    def appSummary: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.HomeController.appSummary",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "api/summary"})
-        }
-      """
-    )
-  
-    // @LINE:16
+    // @LINE:9
     def logout: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.logout",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "logout"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "api/logout"})
         }
       """
     )
   
-    // @LINE:6
+    // @LINE:5
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.index",
       """
@@ -120,27 +70,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:61
-  class ReverseAsyncController(_prefix: => String) {
-
-    def _defaultPrefix: String = {
-      if (_prefix.endsWith("/")) "" else "/"
-    }
-
-  
-    // @LINE:61
-    def message: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.AsyncController.message",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "message"})
-        }
-      """
-    )
-  
-  }
-
-  // @LINE:18
+  // @LINE:10
   class ReverseChatroomController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -148,82 +78,72 @@ package controllers.javascript {
     }
 
   
-    // @LINE:27
+    // @LINE:13
     def destroy: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ChatroomController.destroy",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "chatroom/delete/"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "api/chatroom/delete"})
         }
       """
     )
   
-    // @LINE:29
+    // @LINE:14
     def userMessages: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ChatroomController.userMessages",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "chatroom/userMessages"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "api/chatroom/userMessages"})
         }
       """
     )
   
-    // @LINE:21
+    // @LINE:11
     def send: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ChatroomController.send",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "chatroom/send"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "api/chatroom/send"})
         }
       """
     )
   
-    // @LINE:24
+    // @LINE:12
     def update: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ChatroomController.update",
       """
         function() {
-          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "chatroom/update/"})
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "api/chatroom/update"})
         }
       """
     )
   
-    // @LINE:18
+    // @LINE:10
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ChatroomController.index",
       """
         function() {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "chatroom"})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "api/chatroom"})
         }
       """
     )
   
   }
 
-  // @LINE:40
-  class ReverseFrontendController(_prefix: => String) {
+  // @LINE:17
+  class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:40
-    def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.FrontendController.index",
-      """
-        function() {
-          return _wA({method:"GET", url:"""" + _prefix + """"})
-        }
-      """
-    )
-  
-    // @LINE:46
-    def assetOrDefault: JavaScriptReverseRoute = JavaScriptReverseRoute(
-      "controllers.FrontendController.assetOrDefault",
+    // @LINE:17
+    def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Assets.versioned",
       """
         function(file0) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + (""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("file", file0)})
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "assets/" + (""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("file", file0)})
         }
       """
     )

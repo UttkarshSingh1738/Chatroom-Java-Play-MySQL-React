@@ -1,13 +1,172 @@
-2024-06-23 14:43:08,057 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-7 - Database [default] initialized
-2024-06-23 14:43:08,057 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
-2024-06-23 14:43:08,105 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-7 - Database [;   default] initialized
-2024-06-23 14:43:08,110 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-7 - Creating Pool for datasource ';   default'
-2024-06-23 14:43:10,332 [INFO] from application in play-dev-mode-pekko.actor.default-dispatcher-7 - ApplicationTimer demo: Starting application at 2024-06-23T09:13:10.332315700Z
-2024-06-23 14:43:10,369 [INFO] from play.api.http.EnabledFilters in play-dev-mode-pekko.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2024-06-23 20:10:05,779 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-5 - Database [default] initialized
+2024-06-23 20:10:05,779 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
+2024-06-23 20:10:05,831 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-5 - Database [;   default] initialized
+2024-06-23 20:10:05,831 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-5 - Creating Pool for datasource ';   default'
+2024-06-23 20:10:07,396 [INFO] from application in play-dev-mode-pekko.actor.default-dispatcher-5 - ApplicationTimer demo: Starting application at 2024-06-23T14:40:07.395186400Z
+2024-06-23 20:10:07,443 [INFO] from play.api.http.EnabledFilters in play-dev-mode-pekko.actor.default-dispatcher-5 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     filters.ExampleFilter
 
-2024-06-23 14:43:10,512 [INFO] from play.api.Play in play-dev-mode-pekko.actor.default-dispatcher-7 - Application started (Dev) (no global state)
+2024-06-23 20:10:07,727 [INFO] from play.api.Play in play-dev-mode-pekko.actor.default-dispatcher-5 - Application started (Dev) (no global state)
+2024-06-23 20:15:54,392 [INFO] from application in application-pekko.actor.internal-dispatcher-7 - ApplicationTimer demo: Stopping application at 2024-06-23T14:45:54.392595800Z after 347s.
+2024-06-23 20:15:54,392 [INFO] from play.api.db.HikariCPConnectionPool in application-pekko.actor.internal-dispatcher-7 - Shutting down connection pool.
+2024-06-23 20:15:54,423 [INFO] from play.api.db.HikariCPConnectionPool in application-pekko.actor.internal-dispatcher-7 - Shutting down connection pool.
+2024-06-23 20:15:54,603 [INFO] from play.api.http.HttpErrorHandlerExceptions in play-dev-mode-pekko.actor.default-dispatcher-12 - Registering exception handler: guice-provision-exception-handler
+2024-06-23 20:15:54,729 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-12 - Database [default] initialized
+2024-06-23 20:15:54,729 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-12 - Creating Pool for datasource 'default'
+2024-06-23 20:15:54,729 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-12 - Database [;   default] initialized
+2024-06-23 20:15:54,729 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-12 - Creating Pool for datasource ';   default'
+2024-06-23 20:15:54,815 [INFO] from application in play-dev-mode-pekko.actor.default-dispatcher-12 - ApplicationTimer demo: Starting application at 2024-06-23T14:45:54.815593600Z
+2024-06-23 20:15:54,822 [INFO] from play.api.http.EnabledFilters in play-dev-mode-pekko.actor.default-dispatcher-12 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2024-06-23 20:15:54,830 [INFO] from play.api.Play in play-dev-mode-pekko.actor.default-dispatcher-12 - Application started (Dev) (no global state)
+2024-06-23 20:17:07,506 [INFO] from application in application-pekko.actor.internal-dispatcher-4 - ApplicationTimer demo: Stopping application at 2024-06-23T14:47:07.506585100Z after 73s.
+2024-06-23 20:17:07,506 [INFO] from play.api.db.HikariCPConnectionPool in application-pekko.actor.internal-dispatcher-4 - Shutting down connection pool.
+2024-06-23 20:17:07,522 [INFO] from play.api.db.HikariCPConnectionPool in application-pekko.actor.internal-dispatcher-4 - Shutting down connection pool.
+2024-06-23 20:17:07,554 [INFO] from play.api.http.HttpErrorHandlerExceptions in play-dev-mode-pekko.actor.default-dispatcher-15 - Registering exception handler: guice-provision-exception-handler
+2024-06-23 20:17:07,702 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-15 - Database [default] initialized
+2024-06-23 20:17:07,702 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-15 - Creating Pool for datasource 'default'
+2024-06-23 20:17:07,703 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-15 - Database [;   default] initialized
+2024-06-23 20:17:07,703 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-15 - Creating Pool for datasource ';   default'
+2024-06-23 20:17:07,779 [INFO] from application in play-dev-mode-pekko.actor.default-dispatcher-15 - ApplicationTimer demo: Starting application at 2024-06-23T14:47:07.779057400Z
+2024-06-23 20:17:07,779 [INFO] from play.api.http.EnabledFilters in play-dev-mode-pekko.actor.default-dispatcher-15 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2024-06-23 20:17:07,784 [INFO] from play.api.Play in play-dev-mode-pekko.actor.default-dispatcher-15 - Application started (Dev) (no global state)
+2024-06-23 20:18:56,649 [INFO] from application in application-pekko.actor.internal-dispatcher-2 - ApplicationTimer demo: Stopping application at 2024-06-23T14:48:56.649812500Z after 109s.
+2024-06-23 20:18:56,649 [INFO] from play.api.db.HikariCPConnectionPool in application-pekko.actor.internal-dispatcher-2 - Shutting down connection pool.
+2024-06-23 20:18:56,649 [INFO] from play.api.db.HikariCPConnectionPool in application-pekko.actor.internal-dispatcher-2 - Shutting down connection pool.
+2024-06-23 20:18:56,697 [INFO] from play.api.http.HttpErrorHandlerExceptions in play-dev-mode-pekko.actor.default-dispatcher-16 - Registering exception handler: guice-provision-exception-handler
+2024-06-23 20:18:56,807 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-16 - Database [default] initialized
+2024-06-23 20:18:56,807 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-16 - Creating Pool for datasource 'default'
+2024-06-23 20:18:56,807 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-16 - Database [;   default] initialized
+2024-06-23 20:18:56,807 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-16 - Creating Pool for datasource ';   default'
+2024-06-23 20:18:56,886 [INFO] from application in play-dev-mode-pekko.actor.default-dispatcher-16 - ApplicationTimer demo: Starting application at 2024-06-23T14:48:56.886803100Z
+2024-06-23 20:18:56,891 [INFO] from play.api.http.EnabledFilters in play-dev-mode-pekko.actor.default-dispatcher-16 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2024-06-23 20:18:56,891 [INFO] from play.api.Play in play-dev-mode-pekko.actor.default-dispatcher-16 - Application started (Dev) (no global state)
+2024-06-23 20:20:38,151 [INFO] from application in application-pekko.actor.internal-dispatcher-5 - ApplicationTimer demo: Stopping application at 2024-06-23T14:50:38.151190600Z after 102s.
+2024-06-23 20:20:38,151 [INFO] from play.api.db.HikariCPConnectionPool in application-pekko.actor.internal-dispatcher-5 - Shutting down connection pool.
+2024-06-23 20:20:38,151 [INFO] from play.api.db.HikariCPConnectionPool in application-pekko.actor.internal-dispatcher-5 - Shutting down connection pool.
+2024-06-23 20:20:38,190 [INFO] from play.api.http.HttpErrorHandlerExceptions in play-dev-mode-pekko.actor.default-dispatcher-26 - Registering exception handler: guice-provision-exception-handler
+2024-06-23 20:20:38,249 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-26 - Database [default] initialized
+2024-06-23 20:20:38,249 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-26 - Creating Pool for datasource 'default'
+2024-06-23 20:20:38,249 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-26 - Database [;   default] initialized
+2024-06-23 20:20:38,249 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-26 - Creating Pool for datasource ';   default'
+2024-06-23 20:20:38,308 [INFO] from application in play-dev-mode-pekko.actor.default-dispatcher-26 - ApplicationTimer demo: Starting application at 2024-06-23T14:50:38.308547200Z
+2024-06-23 20:20:38,308 [INFO] from play.api.http.EnabledFilters in play-dev-mode-pekko.actor.default-dispatcher-26 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2024-06-23 20:20:38,308 [INFO] from play.api.Play in play-dev-mode-pekko.actor.default-dispatcher-26 - Application started (Dev) (no global state)
+2024-06-23 20:21:36,299 [INFO] from application in application-pekko.actor.internal-dispatcher-4 - ApplicationTimer demo: Stopping application at 2024-06-23T14:51:36.299819400Z after 58s.
+2024-06-23 20:21:36,299 [INFO] from play.api.db.HikariCPConnectionPool in application-pekko.actor.internal-dispatcher-4 - Shutting down connection pool.
+2024-06-23 20:21:36,299 [INFO] from play.api.db.HikariCPConnectionPool in application-pekko.actor.internal-dispatcher-4 - Shutting down connection pool.
+2024-06-23 20:21:36,345 [INFO] from play.api.http.HttpErrorHandlerExceptions in play-dev-mode-pekko.actor.default-dispatcher-22 - Registering exception handler: guice-provision-exception-handler
+2024-06-23 20:21:36,422 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-22 - Database [default] initialized
+2024-06-23 20:21:36,422 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-22 - Creating Pool for datasource 'default'
+2024-06-23 20:21:36,422 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-22 - Database [;   default] initialized
+2024-06-23 20:21:36,422 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-22 - Creating Pool for datasource ';   default'
+2024-06-23 20:21:36,477 [INFO] from application in play-dev-mode-pekko.actor.default-dispatcher-22 - ApplicationTimer demo: Starting application at 2024-06-23T14:51:36.477222800Z
+2024-06-23 20:21:36,477 [INFO] from play.api.http.EnabledFilters in play-dev-mode-pekko.actor.default-dispatcher-22 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2024-06-23 20:21:36,477 [INFO] from play.api.Play in play-dev-mode-pekko.actor.default-dispatcher-22 - Application started (Dev) (no global state)
+2024-06-23 20:25:03,433 [ERROR] from play.api.http.DevHttpErrorHandler in play-dev-mode-pekko.actor.default-dispatcher-20 - 
+
+! @86135fpfn - Internal server error, for (GET) [/api/logout] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[cannot find symbol
+  symbol:   class ApplicationTimer
+  location: package services]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:28)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:28)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$8(PlayReload.scala:119)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:92)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:144)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:144)
+	at sbt.PlayRun$.$anonfun$playRunTask$5(PlayRun.scala:99)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:495)
+	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:58)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:64)
+	at play.runsupport.Reloader.reload(Reloader.scala:495)
+	at play.core.server.DevServerStart$DevServerApplicationProvider$1.get(DevServerStart.scala:189)
+	at play.core.server.PekkoHttpServer.handleRequest(PekkoHttpServer.scala:320)
+	at play.core.server.PekkoHttpServer.$anonfun$createServerBinding$1(PekkoHttpServer.scala:224)
+	at org.apache.pekko.stream.impl.fusing.MapAsyncUnordered$$anon$31.onPush(Ops.scala:1443)
+	at org.apache.pekko.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:555)
+	at org.apache.pekko.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:506)
+	at org.apache.pekko.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:400)
+	at org.apache.pekko.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:662)
+	at org.apache.pekko.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:532)
+	at org.apache.pekko.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:637)
+	at org.apache.pekko.stream.impl.fusing.ActorGraphInterpreter.org$apache$pekko$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:813)
+	at org.apache.pekko.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:831)
+	at org.apache.pekko.actor.Actor.aroundReceive(Actor.scala:547)
+	at org.apache.pekko.actor.Actor.aroundReceive$(Actor.scala:545)
+	at org.apache.pekko.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:729)
+	at org.apache.pekko.actor.ActorCell.receiveMessage(ActorCell.scala:590)
+	at org.apache.pekko.actor.ActorCell.invoke(ActorCell.scala:557)
+	at org.apache.pekko.dispatch.Mailbox.processMailbox(Mailbox.scala:280)
+	at org.apache.pekko.dispatch.Mailbox.run(Mailbox.scala:241)
+	at org.apache.pekko.dispatch.Mailbox.exec(Mailbox.scala:253)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+2024-06-23 20:25:58,348 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-5-thread-7 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 40000 milliseconds timeout
+2024-06-23 20:25:58,348 [INFO] from play.core.server.PekkoHttpServer in pool-5-thread-7 - Stopping Pekko HTTP server...
+2024-06-23 20:25:58,348 [INFO] from play.core.server.PekkoHttpServer in play-dev-mode-pekko.actor.internal-dispatcher-29 - Unbinding /[0:0:0:0:0:0:0:0]:9000
+2024-06-23 20:25:58,353 [INFO] from play.core.server.PekkoHttpServer in play-dev-mode-pekko.actor.internal-dispatcher-29 - Terminating server binding for /[0:0:0:0:0:0:0:0]:9000
+2024-06-23 20:25:58,353 [INFO] from application in application-pekko.actor.internal-dispatcher-9 - ApplicationTimer demo: Stopping application at 2024-06-23T14:55:58.353329600Z after 262s.
+2024-06-23 20:25:58,353 [INFO] from play.api.db.HikariCPConnectionPool in application-pekko.actor.internal-dispatcher-9 - Shutting down connection pool.
+2024-06-23 20:25:58,353 [INFO] from play.api.db.HikariCPConnectionPool in application-pekko.actor.internal-dispatcher-9 - Shutting down connection pool.
+2024-06-23 20:25:58,370 [INFO] from play.core.server.PekkoHttpServer in play-dev-mode-pekko.actor.internal-dispatcher-29 - Running provided shutdown stop hooks
+2024-06-23 20:29:33,892 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-7 - Database [default] initialized
+2024-06-23 20:29:33,908 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2024-06-23 20:29:33,972 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-pekko.actor.default-dispatcher-7 - Database [;   default] initialized
+2024-06-23 20:29:33,972 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-pekko.actor.default-dispatcher-7 - Creating Pool for datasource ';   default'
+2024-06-23 20:29:35,087 [INFO] from play.api.http.EnabledFilters in play-dev-mode-pekko.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ExampleFilter
+
+2024-06-23 20:29:35,231 [INFO] from play.api.Play in play-dev-mode-pekko.actor.default-dispatcher-7 - Application started (Dev) (no global state)
+2024-06-23 20:41:53,281 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-21-thread-7 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 40000 milliseconds timeout
+2024-06-23 20:41:53,283 [INFO] from play.core.server.PekkoHttpServer in pool-21-thread-7 - Stopping Pekko HTTP server...
+2024-06-23 20:41:53,289 [INFO] from play.core.server.PekkoHttpServer in play-dev-mode-pekko.actor.internal-dispatcher-24 - Unbinding /[0:0:0:0:0:0:0:0]:9000
+2024-06-23 20:41:53,294 [INFO] from play.core.server.PekkoHttpServer in play-dev-mode-pekko.actor.internal-dispatcher-25 - Terminating server binding for /[0:0:0:0:0:0:0:0]:9000
+2024-06-23 20:41:53,295 [INFO] from play.api.db.HikariCPConnectionPool in application-pekko.actor.internal-dispatcher-14 - Shutting down connection pool.
+2024-06-23 20:41:53,308 [INFO] from play.api.db.HikariCPConnectionPool in application-pekko.actor.internal-dispatcher-14 - Shutting down connection pool.
+2024-06-23 20:41:53,335 [INFO] from play.core.server.PekkoHttpServer in play-dev-mode-pekko.actor.internal-dispatcher-24 - Running provided shutdown stop hooks

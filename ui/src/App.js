@@ -1,48 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { AppBar, Toolbar, Typography, Container, Card, CardContent, CircularProgress } from '@mui/material';
-
-const theme = createTheme({
-    palette: {
-        primary: {
-            main: '#1976d2',
-        },
-    },
-});
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './components/Login';
+import Register from './components/Register';
+import Chatroom from "./components/Chatroom";
+import MyMessages from "./components/MyMessages";
 
 function App() {
-  const [summary, setSummary] = useState('');
-
-  useEffect(() => {
-    axios.get('/api/summary')
-        .then(response => setSummary(response.data.content))
-        .catch(error => console.error('Error fetching summary:', error));
-  }, []);
-
     return (
-        <ThemeProvider theme={theme}>
-            <AppBar position="static">
-                <Toolbar>
-                    <Typography variant="h6">
-                        Chatroom Application
-                    </Typography>
-                </Toolbar>
-            </AppBar>
-            <Container maxWidth="sm" style={{ marginTop: '2em' }}>
-                    <Card>
-                        <CardContent>
-                            <Typography variant="h5" component="div">
-                                Summary
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                {summary}
-                            </Typography>
-                        </CardContent>
-                    </Card>
-
-            </Container>
-        </ThemeProvider>
+        <Router>
+            <div className="App">
+                <Routes>
+                    <Route exact path='/' element={<Login/>} />
+                    <Route path='/register' element={<Register/>} />
+                    <Route path="/chatroom" element={<Chatroom/>} />
+                    <Route path="/userMessages" element={<MyMessages/>} />
+                </Routes>
+            </div>
+        </Router>
     );
 }
 
