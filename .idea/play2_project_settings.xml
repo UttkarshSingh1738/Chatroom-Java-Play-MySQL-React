@@ -7,7 +7,7 @@
           <value>
             <ProjectSettingsEntry>
               <option name="sourceDir" value="$PROJECT_DIR$/app" />
-              <option name="confDir" value="$PROJECT_DIR$/app" />
+              <option name="confDir" value="C:\Users\uttka\Documents\GitHub\Chatroom-Java-Play-MySQL-React\app" />
               <option name="templateImports">
                 <list>
                   <option value="_root_.play.twirl.api.TwirlFeatureImports._" />
@@ -37,7 +37,7 @@
                   <option value="play.libs.F" />
                 </list>
               </option>
-              <option name="uri" value="$PROJECT_DIR$/../Play-Scala%20Chatroom%20Application" />
+              <option name="uri" value="/C:/Users/uttka/Documents/GitHub/Chatroom-Java-Play-MySQL-React" />
             </ProjectSettingsEntry>
           </value>
         </entry>
