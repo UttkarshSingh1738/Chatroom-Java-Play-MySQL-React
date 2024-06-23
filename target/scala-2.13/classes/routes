@@ -28,6 +28,14 @@ POST    /chatroom/delete/                controllers.ChatroomController.destroy(
 # User Messages
 GET     /chatroom/userMessages               controllers.ChatroomController.userMessages(request: Request)
 
+
+
+
+
+
+
+
+
 # Serve index page from public directory
 GET     /                           controllers.FrontendController.index()
 
@@ -36,6 +44,16 @@ GET     /api/summary                controllers.HomeController.appSummary
 
 # Serve static assets under public directory
 GET     /*file                      controllers.FrontendController.assetOrDefault(file)
+
+
+
+
+
+
+
+
+
+
 
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count

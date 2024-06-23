@@ -10,14 +10,14 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers {
 
-  // @LINE:45
+  // @LINE:63
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:45
+    // @LINE:63
     def versioned(file:String): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[String]].unbind("file", file))
@@ -25,14 +25,14 @@ package controllers {
   
   }
 
-  // @LINE:41
+  // @LINE:59
   class ReverseCountController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:41
+    // @LINE:59
     def count: Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "count")
@@ -65,7 +65,7 @@ package controllers {
       Call("POST", _prefix + { _defaultPrefix } + "auth")
     }
   
-    // @LINE:35
+    // @LINE:43
     def appSummary: Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "api/summary")
@@ -85,14 +85,14 @@ package controllers {
   
   }
 
-  // @LINE:43
+  // @LINE:61
   class ReverseAsyncController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:43
+    // @LINE:61
     def message: Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "message")
@@ -139,20 +139,20 @@ package controllers {
   
   }
 
-  // @LINE:32
+  // @LINE:40
   class ReverseFrontendController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:32
+    // @LINE:40
     def index(): Call = {
       
       Call("GET", _prefix)
     }
   
-    // @LINE:38
+    // @LINE:46
     def assetOrDefault(file:String): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + implicitly[play.api.mvc.PathBindable[String]].unbind("file", file))

@@ -10,7 +10,7 @@ import _root_.play.libs.F
 // @LINE:6
 package controllers.javascript {
 
-  // @LINE:45
+  // @LINE:63
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -18,7 +18,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:45
+    // @LINE:63
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -30,7 +30,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:41
+  // @LINE:59
   class ReverseCountController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -38,7 +38,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:41
+    // @LINE:59
     def count: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.CountController.count",
       """
@@ -88,7 +88,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:35
+    // @LINE:43
     def appSummary: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.appSummary",
       """
@@ -120,7 +120,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:43
+  // @LINE:61
   class ReverseAsyncController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -128,7 +128,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:43
+    // @LINE:61
     def message: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.AsyncController.message",
       """
@@ -200,7 +200,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:32
+  // @LINE:40
   class ReverseFrontendController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -208,7 +208,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:32
+    // @LINE:40
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.FrontendController.index",
       """
@@ -218,7 +218,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:38
+    // @LINE:46
     def assetOrDefault: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.FrontendController.assetOrDefault",
       """

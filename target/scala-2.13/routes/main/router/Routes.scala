@@ -17,13 +17,13 @@ class Routes(
   HomeController_5: controllers.HomeController,
   // @LINE:18
   ChatroomController_2: controllers.ChatroomController,
-  // @LINE:32
+  // @LINE:40
   FrontendController_0: controllers.FrontendController,
-  // @LINE:41
+  // @LINE:59
   CountController_1: controllers.CountController,
-  // @LINE:43
+  // @LINE:61
   AsyncController_4: controllers.AsyncController,
-  // @LINE:45
+  // @LINE:63
   Assets_3: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -34,13 +34,13 @@ class Routes(
     HomeController_5: controllers.HomeController,
     // @LINE:18
     ChatroomController_2: controllers.ChatroomController,
-    // @LINE:32
+    // @LINE:40
     FrontendController_0: controllers.FrontendController,
-    // @LINE:41
+    // @LINE:59
     CountController_1: controllers.CountController,
-    // @LINE:43
+    // @LINE:61
     AsyncController_4: controllers.AsyncController,
-    // @LINE:45
+    // @LINE:63
     Assets_3: controllers.Assets
   ) = this(errorHandler, HomeController_5, ChatroomController_2, FrontendController_0, CountController_1, AsyncController_4, Assets_3, "/")
 
@@ -276,7 +276,7 @@ class Routes(
     )
   )
 
-  // @LINE:32
+  // @LINE:40
   private lazy val controllers_FrontendController_index10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix)))
   )
@@ -294,7 +294,7 @@ class Routes(
     )
   )
 
-  // @LINE:35
+  // @LINE:43
   private lazy val controllers_HomeController_appSummary11_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/summary")))
   )
@@ -312,7 +312,7 @@ class Routes(
     )
   )
 
-  // @LINE:38
+  // @LINE:46
   private lazy val controllers_FrontendController_assetOrDefault12_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), DynamicPart("file", """.+""", encodeable=false)))
   )
@@ -330,7 +330,7 @@ class Routes(
     )
   )
 
-  // @LINE:41
+  // @LINE:59
   private lazy val controllers_CountController_count13_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("count")))
   )
@@ -348,7 +348,7 @@ class Routes(
     )
   )
 
-  // @LINE:43
+  // @LINE:61
   private lazy val controllers_AsyncController_message14_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("message")))
   )
@@ -366,7 +366,7 @@ class Routes(
     )
   )
 
-  // @LINE:45
+  // @LINE:63
   private lazy val controllers_Assets_versioned15_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""", encodeable=false)))
   )
@@ -456,37 +456,37 @@ class Routes(
           req => ChatroomController_2.userMessages(req))
       }
   
-    // @LINE:32
+    // @LINE:40
     case controllers_FrontendController_index10_route(params@_) =>
       call { 
         controllers_FrontendController_index10_invoker.call(FrontendController_0.index())
       }
   
-    // @LINE:35
+    // @LINE:43
     case controllers_HomeController_appSummary11_route(params@_) =>
       call { 
         controllers_HomeController_appSummary11_invoker.call(HomeController_5.appSummary)
       }
   
-    // @LINE:38
+    // @LINE:46
     case controllers_FrontendController_assetOrDefault12_route(params@_) =>
       call(params.fromPath[String]("file", None)) { (file) =>
         controllers_FrontendController_assetOrDefault12_invoker.call(FrontendController_0.assetOrDefault(file))
       }
   
-    // @LINE:41
+    // @LINE:59
     case controllers_CountController_count13_route(params@_) =>
       call { 
         controllers_CountController_count13_invoker.call(CountController_1.count)
       }
   
-    // @LINE:43
+    // @LINE:61
     case controllers_AsyncController_message14_route(params@_) =>
       call { 
         controllers_AsyncController_message14_invoker.call(AsyncController_4.message)
       }
   
-    // @LINE:45
+    // @LINE:63
     case controllers_Assets_versioned15_route(params@_) =>
       call(params.fromPath[String]("file", None)) { (file) =>
         controllers_Assets_versioned15_invoker.call(Assets_3.versioned(file))
