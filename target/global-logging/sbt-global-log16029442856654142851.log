@@ -1,0 +1,43 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(371d1a8f-81ab-418c-a81b-8e22e56a2dc1), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[31merror[0m] [0m[0mCaught java.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0mTo best utilize classloader caching and to prevent file handle leaks, we recommend running sbt without a MaxMetaspaceSize limit. [0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.defineClass1(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.security.AccessController.executePrivileged(AccessController.java:809)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.SeqViewLike.newSliced(SeqViewLike.scala:202)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.SeqViewLike.newSliced$(SeqViewLike.scala:202)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.SeqLike$$anon$2.newSliced(SeqLike.scala:682)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.SeqViewLike.newDropped(SeqViewLike.scala:220)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.SeqViewLike.newDropped$(SeqViewLike.scala:220)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.SeqLike$$anon$2.newDropped(SeqLike.scala:682)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.SeqLike$$anon$2.newDropped(SeqLike.scala:682)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableViewLike.drop(IterableViewLike.scala:135)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.IterableViewLike.drop$(IterableViewLike.scala:135)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.SeqLike$$anon$2.drop(SeqLike.scala:682)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.meta.internal.parsers.ScalametaParser.modifiersBuf(ScalametaParser.scala:3131)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.meta.internal.parsers.ScalametaParser.$anonfun$nonLocalDefOrDcl$1(ScalametaParser.scala:3618)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.meta.internal.parsers.ScalametaParser.$anonfun$nonLocalDefOrDcl$1$adapted(ScalametaParser.scala:3616)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.meta.internal.parsers.ScalametaParser$$Lambda/0x0000750da454a800.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.meta.internal.parsers.ScalametaParser.scala$meta$internal$parsers$ScalametaParser$$listBy(ScalametaParser.scala:565)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:3616)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.meta.internal.parsers.ScalametaParser$$anonfun$1.applyOrElse(ScalametaParser.scala:4479)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.meta.internal.parsers.ScalametaParser$$anonfun$1.applyOrElse(ScalametaParser.scala:4474)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.PartialFunction$Lifted.apply(PartialFunction.scala:228)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.PartialFunction$Lifted.apply(PartialFunction.scala:224)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.meta.internal.parsers.ScalametaParser.entrypointStat(ScalametaParser.scala:4511)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0mUse 'last' for the full log.[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

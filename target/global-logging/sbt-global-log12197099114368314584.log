@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(854e0ce6-1a8b-4c58-8cf3-26b3aa6569b7), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[31merror[0m] [0m[0mCaught java.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0mTo best utilize classloader caching and to prevent file handle leaks, we recommend running sbt without a MaxMetaspaceSize limit. [0m
+[0m[[0m[31merror[0m] [0m[0m[0m

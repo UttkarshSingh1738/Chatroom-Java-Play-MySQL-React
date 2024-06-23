@@ -1,0 +1,45 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Login Page
+GET     /                           controllers.HomeController.index(request: Request)
+# Register Page
+GET     /register                           controllers.HomeController.register(request: Request)
+# Save User
++ nocsrf
+POST     /save                           controllers.HomeController.save(request: Request)
+# Authenticate User
++ nocsrf
+POST     /auth                           controllers.HomeController.authenticate(request: Request)
+# Logout
+GET     /logout                           controllers.HomeController.logout()
+# Chatroom
+GET     /chatroom                           controllers.ChatroomController.index(request: Request)
+# Sent Chat
++ nocsrf
+POST     /chatroom/send                           controllers.ChatroomController.send(request: Request)
+# Update Chat
++ nocsrf
+POST    /chatroom/update/                controllers.ChatroomController.update(request: Request)
+# Destroy Chat
++ nocsrf
+POST    /chatroom/delete/                controllers.ChatroomController.destroy(request: Request)
+# User Messages
+GET     /chatroom/userMessages               controllers.ChatroomController.userMessages(request: Request)
+
+# Serve index page from public directory
+GET     /                           controllers.FrontendController.index()
+
+# An example route (Prefix all API routes with apiPrefix defined in application.conf)
+GET     /api/summary                controllers.HomeController.appSummary
+
+# Serve static assets under public directory
+GET     /*file                      controllers.FrontendController.assetOrDefault(file)
+
+# An example controller showing how to use dependency injection
+GET     /count                      controllers.CountController.count
+# An example controller showing how to write asynchronous code
+GET     /message                    controllers.AsyncController.message
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(file)

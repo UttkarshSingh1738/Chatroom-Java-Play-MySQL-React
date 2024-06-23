@@ -1,0 +1,13 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(5b9af6d7-98bc-4af5-9baa-8e41cffa8b1c), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source and 1 Java source to /home/utkarsh/Documents/Play-Scala Chatroom Application/target/scala-2.13/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mAnnotation processing is enabled because one or more processors were found[0m
+[0m[[0m[0minfo[0m] [0m[0m  on the class path. A future release of javac may disable annotation processing[0m
+[0m[[0m[0minfo[0m] [0m[0m  unless at least one processor is specified by name (-processor), or a search[0m
+[0m[[0m[0minfo[0m] [0m[0m  path is specified (--processor-path, --processor-module-path), or annotation[0m
+[0m[[0m[0minfo[0m] [0m[0m  processing is enabled explicitly (-proc:only, -proc:full).[0m
+[0m[[0m[0minfo[0m] [0m[0m  Use -Xlint:-options to suppress this message.[0m
+[0m[[0m[0minfo[0m] [0m[0m  Use -proc:none to disable annotation processing.[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 5 s, completed Jun 20, 2024, 12:26:26 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

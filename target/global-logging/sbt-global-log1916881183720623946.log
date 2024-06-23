@@ -1,0 +1,59 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(b8b0bf5e-7a18-404e-9e79-7e3ffb089e1b), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 11 Scala sources and 12 Java sources to /home/utkarsh/Documents/Play-Scala Chatroom Application/target/scala-2.13/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:22:66: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m            @form(action = routes.HomeController.authenticate(), 'class -> "form-horizontal pb-4") {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:24:50: symbol literal is deprecated; use Symbol("_label") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("username"), '_label -> "Username", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:24:73: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("username"), '_label -> "Username", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:27:54: symbol literal is deprecated; use Symbol("_label") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputPassword(userForm("password"), '_label -> "Password", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:27:77: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputPassword(userForm("password"), '_label -> "Password", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:21:58: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m            @form(action = routes.HomeController.save(), 'class -> "form-horizontal pb-4") {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:23:50: symbol literal is deprecated; use Symbol("_label") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("username"), '_label -> "Username", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:23:73: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("username"), '_label -> "Username", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:26:50: symbol literal is deprecated; use Symbol("_label") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("password"), '_label -> "Password", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:26:73: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("password"), '_label -> "Password", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m10 warnings found[0m
+[0m[[0m[0minfo[0m] [0m[0mAnnotation processing is enabled because one or more processors were found[0m
+[0m[[0m[0minfo[0m] [0m[0m  on the class path. A future release of javac may disable annotation processing[0m
+[0m[[0m[0minfo[0m] [0m[0m  unless at least one processor is specified by name (-processor), or a search[0m
+[0m[[0m[0minfo[0m] [0m[0m  path is specified (--processor-path, --processor-module-path), or annotation[0m
+[0m[[0m[0minfo[0m] [0m[0m  processing is enabled explicitly (-proc:only, -proc:full).[0m
+[0m[[0m[0minfo[0m] [0m[0m  Use -Xlint:-options to suppress this message.[0m
+[0m[[0m[0minfo[0m] [0m[0m  Use -proc:none to disable annotation processing.[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:chatroom-application[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Java source to /home/utkarsh/Documents/Play-Scala Chatroom Application/target/scala-2.13/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mAnnotation processing is enabled because one or more processors were found[0m
+[0m[[0m[0minfo[0m] [0m[0m  on the class path. A future release of javac may disable annotation processing[0m
+[0m[[0m[0minfo[0m] [0m[0m  unless at least one processor is specified by name (-processor), or a search[0m
+[0m[[0m[0minfo[0m] [0m[0m  path is specified (--processor-path, --processor-module-path), or annotation[0m
+[0m[[0m[0minfo[0m] [0m[0m  processing is enabled explicitly (-proc:only, -proc:full).[0m
+[0m[[0m[0minfo[0m] [0m[0m  Use -Xlint:-options to suppress this message.[0m
+[0m[[0m[0minfo[0m] [0m[0m  Use -proc:none to disable annotation processing.[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:chatroom-application[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 1411 s (23:31), completed Jun 20, 2024, 12:40:15 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

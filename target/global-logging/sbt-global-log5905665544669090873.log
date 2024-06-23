@@ -1,0 +1,45 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(4e991707-874f-44bd-a2a1-564667af125a), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[31merror[0m] [0m[0mCaught java.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0mTo best utilize classloader caching and to prevent file handle leaks, we recommend running sbt without a MaxMetaspaceSize limit.  If this error occurred during a test or run evaluation, it can be caused by the choice of ClassLoaderLayeringStrategy. Of the available strategies, ClassLoaderLayeringStrategy.ScalaLibrary will typically use the least metaspace.  To change the layering strategy for this session, run:[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0mset ThisBuild / classLoaderLayeringStrategy := ClassLoaderLayeringStrategy.ScalaLibrary[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.defineClass1(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.security.AccessController.executePrivileged(AccessController.java:809)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Class.getDeclaredFields0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3473)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Class.getField0(Class.java:3658)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.Class.getField(Class.java:2282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.runsupport.Reloader$.startDevMode(Reloader.scala:309)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.PlayRun$.devModeServer$lzycompute$1(PlayRun.scala:127)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.PlayRun$.devModeServer$1(PlayRun.scala:110)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.PlayRun$.$anonfun$playRunTask$3(PlayRun.scala:133)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.PlayRun$$$Lambda/0x00007a068bdea9f8.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1$$Lambda/0x00007a068b31dbd0.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:63)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater$$Lambda/0x00007a068b8493f8.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute$$Lambda/0x00007a068b855898.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:292)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute$$Lambda/0x00007a068b84c4f0.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0mUse 'last' for the full log.[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

@@ -1,0 +1,9 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(f785635d-58ad-4899-8524-b853b15037f8), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating chatroom-application_2.13[0m
+[0m[[0m[0minfo[0m] [0m[0mResolved chatroom-application_2.13 dependencies[0m
+[0m[[0m[0minfo[0m] [0m[0mFetching artifacts of chatroom-application_2.13[0m
+[0m[[0m[0minfo[0m] [0m[0mFetched artifacts of chatroom-application_2.13[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 5 s, completed Jun 19, 2024, 12:17:01 AM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

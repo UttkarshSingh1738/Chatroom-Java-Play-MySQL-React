@@ -1,0 +1,14 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(8b3a5991-9c60-4a4f-ad06-042d9beeaff7), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source and 1 Java source to /home/utkarsh/Documents/Play-Scala Chatroom Application/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Chatroom.scala.html:80:67: not found: value messageId[0m
+[0m[[0m[31merror[0m] [0m[0m                        $.post("@routes.ChatroomController.update(messageId)", { message: newMessage })[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Chatroom.scala.html:88:68: not found: value messageId[0m
+[0m[[0m[31merror[0m] [0m[0m                        $.post("@routes.ChatroomController.destroy(messageId)")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed Jun 19, 2024, 2:38:11 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

@@ -1,0 +1,42 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(84c91e62-e242-47e0-9283-3a704869b6ab), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[31merror[0m] [0m[0mCaught java.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0mTo best utilize classloader caching and to prevent file handle leaks, we recommend running sbt without a MaxMetaspaceSize limit. [0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.defineClass1(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.security.AccessController.executePrivileged(AccessController.java:809)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:27)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.db.ebean.ModelsConfigLoader.apply(ModelsConfigLoader.java:21)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$4(PlayEbean.scala:168)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.ebean.sbt.PlayEbean$$$Lambda/0x00007bd2dbae2b78.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.ebean.sbt.PlayEbean$.withClassLoader$1(PlayEbean.scala:143)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.ebean.sbt.PlayEbean$.$anonfun$configuredEbeanModels$1(PlayEbean.scala:164)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.ebean.sbt.PlayEbean$$$Lambda/0x00007bd2db9c2d70.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1$$Lambda/0x00007bd2db351420.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:63)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater$$Lambda/0x00007bd2db82bcc8.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute$$Lambda/0x00007bd2db8331c0.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:292)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute$$Lambda/0x00007bd2db82edc0.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4$$Lambda/0x00007bd2db831db0.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0mUse 'last' for the full log.[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

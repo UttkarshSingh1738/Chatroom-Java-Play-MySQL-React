@@ -1,0 +1,85 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(47c53c31-3a45-4c16-876e-f494cf5a650e), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:chatroom-application[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/utkarsh/Documents/Play-Scala Chatroom Application/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 11 Scala sources and 12 Java sources to /home/utkarsh/Documents/Play-Scala Chatroom Application/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:chatroom-application[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:22:66: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m            @form(action = routes.HomeController.authenticate(), 'class -> "form-horizontal pb-4") {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:24:50: symbol literal is deprecated; use Symbol("_label") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("username"), '_label -> "Username", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:24:73: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("username"), '_label -> "Username", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:27:54: symbol literal is deprecated; use Symbol("_label") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputPassword(userForm("password"), '_label -> "Password", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:27:77: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputPassword(userForm("password"), '_label -> "Password", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:21:58: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m            @form(action = routes.HomeController.save(), 'class -> "form-horizontal pb-4") {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:23:50: symbol literal is deprecated; use Symbol("_label") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("username"), '_label -> "Username", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:23:73: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("username"), '_label -> "Username", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:26:50: symbol literal is deprecated; use Symbol("_label") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("password"), '_label -> "Password", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:26:73: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("password"), '_label -> "Password", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m10 warnings found[0m
+[0m[[0m[0minfo[0m] [0m[0mAnnotation processing is enabled because one or more processors were found[0m
+[0m[[0m[0minfo[0m] [0m[0m  on the class path. A future release of javac may disable annotation processing[0m
+[0m[[0m[0minfo[0m] [0m[0m  unless at least one processor is specified by name (-processor), or a search[0m
+[0m[[0m[0minfo[0m] [0m[0m  path is specified (--processor-path, --processor-module-path), or annotation[0m
+[0m[[0m[0minfo[0m] [0m[0m  processing is enabled explicitly (-proc:only, -proc:full).[0m
+[0m[[0m[0minfo[0m] [0m[0m  Use -Xlint:-options to suppress this message.[0m
+[0m[[0m[0minfo[0m] [0m[0m  Use -proc:none to disable annotation processing.[0m
+[0m[[0m[31merror[0m] [0m[0m## Exception when compiling 23 sources to /home/utkarsh/Documents/Play-Scala Chatroom Application/target/scala-2.13/classes[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.lang.ClassLoader.defineClass1(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.security.AccessController.executePrivileged(AccessController.java:809)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.security.AccessController.doPrivileged(AccessController.java:714)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.javac.AnalyzingJavaCompiler.$anonfun$compile$21(AnalyzingJavaCompiler.scala:212)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.javac.AnalyzingJavaCompiler.$anonfun$compile$21$adapted(AnalyzingJavaCompiler.scala:207)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.javac.AnalyzingJavaCompiler$$Lambda/0x0000711f391073d0.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.collection.TraversableLike$WithFilter.$anonfun$foreach$1(TraversableLike.scala:985)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.collection.TraversableLike$WithFilter$$Lambda/0x0000711f3767c000.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.collection.immutable.List.foreach(List.scala:431)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:984)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.javac.AnalyzingJavaCompiler.$anonfun$compile$19(AnalyzingJavaCompiler.scala:207)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.javac.AnalyzingJavaCompiler$$Lambda/0x0000711f3909fa78.apply$mcV$sp(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.javac.AnalyzingJavaCompiler.timed(AnalyzingJavaCompiler.scala:262)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.javac.AnalyzingJavaCompiler.compile(AnalyzingJavaCompiler.scala:207)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.MixedAnalyzingCompiler.$anonfun$compileJava$2(MixedAnalyzingCompiler.scala:104)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.MixedAnalyzingCompiler.$anonfun$compileJava$2$adapted(MixedAnalyzingCompiler.scala:92)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.MixedAnalyzingCompiler$$Lambda/0x0000711f38fe07c8.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.JarUtils$.withPreviousJar(JarUtils.scala:239)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.MixedAnalyzingCompiler.$anonfun$compileJava$1(MixedAnalyzingCompiler.scala:92)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.MixedAnalyzingCompiler$$Lambda/0x0000711f38fe04e0.apply$mcV$sp(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0mscala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.MixedAnalyzingCompiler.timed(MixedAnalyzingCompiler.scala:249)[0m
+[0m[[0m[31merror[0m] [0m[0msbt.internal.inc.MixedAnalyzingCompiler.compileJava(MixedAnalyzingCompiler.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m           [0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m

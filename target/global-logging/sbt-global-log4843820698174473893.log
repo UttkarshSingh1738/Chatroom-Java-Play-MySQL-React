@@ -1,0 +1,37 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(a84cade0-85ef-4e81-b128-c1e575fcb5e8), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 11 Scala sources and 12 Java sources to /home/utkarsh/Documents/Play-Scala Chatroom Application/target/scala-2.13/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:24:66: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m            @form(action = routes.HomeController.authenticate(), 'class -> "form-horizontal pb-4") {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:26:50: symbol literal is deprecated; use Symbol("_label") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("username"), '_label -> "Username", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:26:73: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("username"), '_label -> "Username", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:29:54: symbol literal is deprecated; use Symbol("_label") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputPassword(userForm("password"), '_label -> "Password", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Login.scala.html:29:77: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputPassword(userForm("password"), '_label -> "Password", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                            ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:21:58: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m            @form(action = routes.HomeController.save(), 'class -> "form-horizontal pb-4") {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:23:50: symbol literal is deprecated; use Symbol("_label") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("username"), '_label -> "Username", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:23:73: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("username"), '_label -> "Username", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:26:50: symbol literal is deprecated; use Symbol("_label") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("password"), '_label -> "Password", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                 ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/home/utkarsh/Documents/Play-Scala Chatroom Application/app/views/Chatroom/Register.scala.html:26:73: symbol literal is deprecated; use Symbol("class") instead [quickfixable][0m
+[0m[[0m[33mwarn[0m] [0m[0m                @inputText(userForm("password"), '_label -> "Password", 'class -> "form-control")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m10 warnings found[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 6 s, completed Jun 19, 2024, 3:45:16 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

@@ -1,0 +1,45 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(4ea96953-9b96-4631-b952-a7f4ab0e8d22), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[31merror[0m] [0m[0mCaught java.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0mTo best utilize classloader caching and to prevent file handle leaks, we recommend running sbt without a MaxMetaspaceSize limit.  If this error occurred during a test or run evaluation, it can be caused by the choice of ClassLoaderLayeringStrategy. Of the available strategies, ClassLoaderLayeringStrategy.ScalaLibrary will typically use the least metaspace.  To change the layering strategy for this session, run:[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0mset ThisBuild / classLoaderLayeringStrategy := ClassLoaderLayeringStrategy.ScalaLibrary[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.defineClass1(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:524)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:427)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:421)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.security.AccessController.executePrivileged(AccessController.java:809)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:420)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.LocalActorRefProvider.guardianSupervisorStrategyConfigurator(ActorRefProvider.scala:512)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.LocalActorRefProvider.guardianStrategy(ActorRefProvider.scala:527)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.LocalActorRefProvider.$anonfun$guardian$1(ActorRefProvider.scala:573)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.LocalActorRefProvider$$Lambda/0x000076c6b8894b88.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Option.getOrElse(Option.scala:201)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.LocalActorRefProvider.guardian$lzycompute(ActorRefProvider.scala:573)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.LocalActorRefProvider.guardian(ActorRefProvider.scala:558)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.LocalActorRefProvider.systemGuardian$lzycompute(ActorRefProvider.scala:591)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.LocalActorRefProvider.systemGuardian(ActorRefProvider.scala:586)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.LocalActorRefProvider.init(ActorRefProvider.scala:617)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.ActorSystemImpl.liftedTree2$1(ActorSystem.scala:1045)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.ActorSystemImpl._start$lzycompute(ActorSystem.scala:1041)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.ActorSystemImpl._start(ActorSystem.scala:1040)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.ActorSystemImpl.start(ActorSystem.scala:1064)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.ActorSystem$.apply(ActorSystem.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.ActorSystem$.apply(ActorSystem.scala:326)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.apache.pekko.actor.ActorSystem$.apply(ActorSystem.scala:300)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.core.server.DevServerStart$.mkServerActorSystem(DevServerStart.scala:90)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.core.server.DevServerStart$.$anonfun$mainDev$1(DevServerStart.scala:80)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.core.server.DevServerStart$$$Lambda/0x000076c6b9031a00.apply(Unknown Source)[0m
+[0m[[0m[31merror[0m] [0m[0m	at play.core.server.DevServerStart.$anonfun$mainDev$2(DevServerStart.scala:308)[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.OutOfMemoryError: Metaspace[0m
+[0m[[0m[31merror[0m] [0m[0mUse 'last' for the full log.[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mshutting down sbt server[0m
