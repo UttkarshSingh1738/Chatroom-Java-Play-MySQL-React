@@ -7,16 +7,16 @@ function UserMessages() {
     const username = localStorage.getItem('username');
     const navigate = useNavigate();
 
-    useEffect(() => {
-        const fetchUserMessages = async () => {
-            try {
-                const response = await axios.post('/api/chatroom/userMessages', {username: username});
-                setMessages(response.data);
-            } catch (error) {
-                console.error('Error fetching user messages:', error);
-            }
-        };
+    const fetchUserMessages = async () => {
+        try {
+            const response = await axios.post('/api/chatroom/userMessages', { username: username });
+            setMessages(response.data);
+        } catch (error) {
+            console.error('Error fetching user messages:', error);
+        }
+    };
 
+    useEffect(() => {
         fetchUserMessages();
     }, [username]);
 
@@ -25,9 +25,7 @@ function UserMessages() {
         if (newMessage) {
             try {
                 await axios.post('/api/chatroom/update', { username: username, message: newMessage, id: messageId });
-                // Fetch messages again to update the list
-                const response = await axios.get('/api/chatroom');
-                setMessages(response.data);
+                await fetchUserMessages();
             } catch (error) {
                 console.error('Error editing message:', error);
             }
@@ -38,9 +36,7 @@ function UserMessages() {
         if (window.confirm("Are you sure you want to delete this message?")) {
             try {
                 await axios.post('/api/chatroom/delete', { id: messageId });
-                // Fetch messages again to update the list
-                const response = await axios.get('/api/chatroom');
-                setMessages(response.data);
+                await fetchUserMessages();
             } catch (error) {
                 console.error('Error deleting message:', error);
             }
@@ -53,16 +49,25 @@ function UserMessages() {
                 <h1 className="display-4">My Messages</h1>
             </div>
             <div className="chat-container">
-                <div className="chat-box card p-3 mb-4" id="chat-box">
-                    {messages.map((message) => (
-                        <div className="chat-message mb-2" id={`message-${message.id}`} key={message.id}>
-                            <strong>{message.user.username}</strong>: <span className="message-text">{message.message}</span> <em>{new Date(message.updatedTime).toLocaleString()}</em>
-                            <div className="actions">
-                                <button className="btn btn-sm btn-warning" onClick={() => editMessage(message.id, message.message)}>Edit</button>
-                                <button className="btn btn-sm btn-danger" onClick={() => deleteMessage(message.id)}>Delete</button>
+                <div className="card p-3 mb-4">
+                    <div className="chat-box">
+                        {messages.map((message) => (
+                            <div className="chat-message mb-3" id={`message-${message.id}`} key={message.id}>
+                                <div className="d-flex justify-content-between">
+                                    <div>
+                                        <strong>{message.user.username}</strong>: <span className="message-text">{message.message}</span>
+                                    </div>
+                                    <div className="text-right">
+                                        <small className="text-muted">{new Date(message.updatedTime).toLocaleString()}</small>
+                                        <div className="actions mt-2">
+                                            <button className="btn btn-sm btn-warning mr-2" onClick={() => editMessage(message.id, message.message)}>Edit</button>
+                                            <button className="btn btn-sm btn-danger" onClick={() => deleteMessage(message.id)}>Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
                 <div className="text-center mt-4">
                     <button className="btn btn-secondary" onClick={() => navigate('/chatroom')}>Back to Chatroom</button>

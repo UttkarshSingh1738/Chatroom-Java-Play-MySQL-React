@@ -15,6 +15,9 @@ function App() {
                     <Route path="/chatroom" element={<Chatroom/>} />
                     <Route path="/userMessages" element={<MyMessages/>} />
                 </Routes>
+                <div className="footer">
+                    &copy; 2024 Chatroom Application | All rights reserved
+                </div>
             </div>
         </Router>
     );

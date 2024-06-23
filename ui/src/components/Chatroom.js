@@ -14,8 +14,7 @@ function Chatroom() {
                 console.error('Error fetching messages:', err);
             }
         };
-        // console.log(messages.at(0));
-        // fetchMessages();
+        fetchMessages();
     }, []);
 
     const sendMessage = async () => {

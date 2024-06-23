@@ -4,10 +4,14 @@ import io.ebean.Finder;
 import io.ebean.Model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import io.ebean.annotation.WhenCreated;
+import io.ebean.annotation.WhenModified;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import play.data.validation.Constraints;
 import org.mindrot.jbcrypt.BCrypt;
+
+import java.time.Instant;
 
 @Entity
 public class People extends Model {
@@ -21,6 +25,12 @@ public class People extends Model {
 
     @Constraints.Required
     public String password;
+
+    @WhenCreated
+    public Instant createdTime;
+
+    @WhenModified
+    public Instant updatedTime;
 
     public static Finder<Long, People> find = new Finder<>(People.class);
 
@@ -54,4 +64,8 @@ public class People extends Model {
     public boolean checkPassword(String password) {
         return BCrypt.checkpw(password, this.password);
     }
+
+    public Instant getCreatedTime() { return createdTime; }
+
+    public Instant getUpdatedTime() { return updatedTime; }
 }
