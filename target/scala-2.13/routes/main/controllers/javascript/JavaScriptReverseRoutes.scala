@@ -18,7 +18,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:7
+    // @LINE:9
     def save: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.save",
       """
@@ -28,7 +28,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:8
+    // @LINE:11
     def authenticate: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.authenticate",
       """
@@ -38,7 +38,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:6
+    // @LINE:7
     def register: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.register",
       """
@@ -48,7 +48,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:9
+    // @LINE:13
     def logout: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.logout",
       """
@@ -70,7 +70,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:10
+  // @LINE:15
   class ReverseChatroomController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -78,7 +78,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:13
+    // @LINE:21
     def destroy: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ChatroomController.destroy",
       """
@@ -88,7 +88,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:14
+    // @LINE:23
     def userMessages: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ChatroomController.userMessages",
       """
@@ -98,7 +98,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:11
+    // @LINE:17
     def send: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ChatroomController.send",
       """
@@ -108,7 +108,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:12
+    // @LINE:19
     def update: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ChatroomController.update",
       """
@@ -118,7 +118,7 @@ package controllers.javascript {
       """
     )
   
-    // @LINE:10
+    // @LINE:15
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.ChatroomController.index",
       """
@@ -130,7 +130,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:17
+  // @LINE:26
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -138,7 +138,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:17
+    // @LINE:26
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

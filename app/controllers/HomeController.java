@@ -1,10 +1,12 @@
 package controllers;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import play.libs.Json;
 import models.People;
 import play.mvc.*;
 import services.UserService;
+import services.TokenService;
 
 import javax.inject.Inject;
 
@@ -32,11 +34,19 @@ public class HomeController extends Controller {
     }
 
     public Result authenticate(Http.Request request) {
-        People user = userService.authenticateUser(
-                request.body().asJson().get("username").asText(), request.body().asJson().get("password").asText());
+        JsonNode json = request.body().asJson();
+        String username = json.get("username").asText();
+        String password = json.get("password").asText();
+        People user = userService.authenticateUser(username, password);
+
         ObjectNode result = Json.newObject();
-        if (user != null) { result.put("status", "success");
-        } else { result.put("status", "fail"); }
+        if (user != null) {
+            String token = TokenService.generateToken(username);
+            result.put("status", "success");
+            result.put("token", token);
+        } else {
+            result.put("status", "fail");
+        }
         return ok(result).as("application/json");
     }
 

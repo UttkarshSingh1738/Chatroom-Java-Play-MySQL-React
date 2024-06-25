@@ -1,9 +1,6 @@
-
-/.idea
-/.idea
 /project/target
 /.idea
 /.bsp
-/.idea
 /target
 logs/application.log
+/target

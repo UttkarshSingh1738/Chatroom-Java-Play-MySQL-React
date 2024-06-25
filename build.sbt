@@ -13,11 +13,12 @@ lazy val root = (project in file("."))
       javaWs,
       evolutions,
       "org.mindrot" % "jbcrypt" % "0.4",
+      "com.auth0" % "java-jwt" % "3.18.2",
       // Test Database
       "com.h2database" % "h2" % "2.2.224",
       "com.mysql" % "mysql-connector-j" % "8.0.33",
       "com.auth0" % "auth0" % "1.28.0",
-      "org.projectlombok" % "lombok" % "1.18.24",
+      "org.projectlombok" % "lombok" % "1.18.32",
 // Testing libraries for dealing with CompletionStage...
       "org.assertj" % "assertj-core" % "3.26.0" % Test,
       "org.awaitility" % "awaitility" % "4.2.1" % Test,

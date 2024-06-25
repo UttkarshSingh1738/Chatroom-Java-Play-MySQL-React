@@ -1,16 +1,14 @@
 package services;
 
+import lombok.NoArgsConstructor;
 import models.Chat;
 import models.People;
 
-import javax.inject.Inject;
 import java.util.List;
 
+@NoArgsConstructor
 public class ChatService {
 
-    @Inject
-    public ChatService() {
-    }
 
     public List<Chat> getAllMessages() {
         return Chat.find.query().fetch("user").findList();

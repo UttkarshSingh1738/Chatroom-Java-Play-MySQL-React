@@ -17,25 +17,25 @@ package controllers {
     }
 
   
-    // @LINE:7
+    // @LINE:9
     def save(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "api/save")
     }
   
-    // @LINE:8
+    // @LINE:11
     def authenticate(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "api/authenticate")
     }
   
-    // @LINE:6
+    // @LINE:7
     def register(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "register")
     }
   
-    // @LINE:9
+    // @LINE:13
     def logout(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "api/logout")
@@ -49,38 +49,38 @@ package controllers {
   
   }
 
-  // @LINE:10
+  // @LINE:15
   class ReverseChatroomController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:13
+    // @LINE:21
     def destroy(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "api/chatroom/delete")
     }
   
-    // @LINE:14
+    // @LINE:23
     def userMessages(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "api/chatroom/userMessages")
     }
   
-    // @LINE:11
+    // @LINE:17
     def send(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "api/chatroom/send")
     }
   
-    // @LINE:12
+    // @LINE:19
     def update(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "api/chatroom/update")
     }
   
-    // @LINE:10
+    // @LINE:15
     def index(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "api/chatroom")
@@ -88,14 +88,14 @@ package controllers {
   
   }
 
-  // @LINE:17
+  // @LINE:26
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:17
+    // @LINE:26
     def versioned(file:String): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[String]].unbind("file", file))

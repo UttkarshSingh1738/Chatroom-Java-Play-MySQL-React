@@ -1,10 +1,12 @@
 package controllers;
 
+import actions.AuthenticatedAction;
 import com.fasterxml.jackson.databind.JsonNode;
 import play.libs.Json;
 import models.Chat;
 import models.People;
 import play.mvc.*;
+import utils.Security;
 import services.ChatService;
 import services.UserService;
 
@@ -22,19 +24,25 @@ public class ChatroomController extends Controller {
         this.userService = userService;
     }
 
+    @With(AuthenticatedAction.class)
     public Result index(Http.Request request) {
         List<Chat> messages = chatService.getAllMessages();
         JsonNode jsonNode = Json.toJson(messages);
         return ok(jsonNode).as("application/json");
-    }
 
+    }
+    @With(AuthenticatedAction.class)
     public Result send(Http.Request request) {
-        People user = userService.getUserByUsername(request.body().asJson().get("username").asText());
-        Chat chat = new Chat(); chat.setUser(user); chat.setMessage(request.body().asJson().get("message").asText());
+        String username = request.attrs().get(Security.USERNAME);
+        People user = userService.getUserByUsername(username);
+        Chat chat = new Chat();
+        chat.setUser(user);
+        chat.setMessage(request.body().asJson().get("message").asText());
         chatService.saveMessage(chat);
         return ok(Json.toJson(chat)).as("application/json");
     }
 
+    @With(AuthenticatedAction.class)
     public Result update(Http.Request request) {
         String id = request.body().asJson().get("id").asText();
         String message = request.body().asJson().get("message").asText();
@@ -44,6 +52,7 @@ public class ChatroomController extends Controller {
         return ok(Json.toJson(chat)).as("application/json");
     }
 
+    @With(AuthenticatedAction.class)
     public Result destroy(Http.Request request) {
         String id = request.body().asJson().get("id").asText();
         Chat chat = chatService.getMessageById(Long.valueOf(id));
@@ -51,8 +60,9 @@ public class ChatroomController extends Controller {
         return ok();
     }
 
+    @With(AuthenticatedAction.class)
     public Result userMessages(Http.Request request) {
-        String username = request.body().asJson().get("username").asText();
+        String username = request.attrs().get(Security.USERNAME);
         People user = userService.getUserByUsername(username);
         List<Chat> userMessages = chatService.getMessagesByUser(user);
         JsonNode jsonNode = Json.toJson(userMessages);

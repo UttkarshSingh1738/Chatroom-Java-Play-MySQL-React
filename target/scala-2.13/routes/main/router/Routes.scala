@@ -15,9 +15,9 @@ class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:5
   HomeController_0: controllers.HomeController,
-  // @LINE:10
+  // @LINE:15
   ChatroomController_1: controllers.ChatroomController,
-  // @LINE:17
+  // @LINE:26
   Assets_2: controllers.Assets,
   val prefix: String
 ) extends GeneratedRouter {
@@ -26,9 +26,9 @@ class Routes(
   def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:5
     HomeController_0: controllers.HomeController,
-    // @LINE:10
+    // @LINE:15
     ChatroomController_1: controllers.ChatroomController,
-    // @LINE:17
+    // @LINE:26
     Assets_2: controllers.Assets
   ) = this(errorHandler, HomeController_0, ChatroomController_1, Assets_2, "/")
 
@@ -79,7 +79,7 @@ class Routes(
     )
   )
 
-  // @LINE:6
+  // @LINE:7
   private lazy val controllers_HomeController_register1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("register")))
   )
@@ -93,11 +93,11 @@ class Routes(
       "GET",
       this.prefix + """register""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:7
+  // @LINE:9
   private lazy val controllers_HomeController_save2_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/save")))
   )
@@ -113,11 +113,11 @@ class Routes(
       "POST",
       this.prefix + """api/save""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:8
+  // @LINE:11
   private lazy val controllers_HomeController_authenticate3_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/authenticate")))
   )
@@ -133,11 +133,11 @@ class Routes(
       "POST",
       this.prefix + """api/authenticate""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:9
+  // @LINE:13
   private lazy val controllers_HomeController_logout4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/logout")))
   )
@@ -153,11 +153,11 @@ class Routes(
       "GET",
       this.prefix + """api/logout""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:10
+  // @LINE:15
   private lazy val controllers_ChatroomController_index5_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/chatroom")))
   )
@@ -173,11 +173,11 @@ class Routes(
       "GET",
       this.prefix + """api/chatroom""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:11
+  // @LINE:17
   private lazy val controllers_ChatroomController_send6_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/chatroom/send")))
   )
@@ -193,11 +193,11 @@ class Routes(
       "POST",
       this.prefix + """api/chatroom/send""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:12
+  // @LINE:19
   private lazy val controllers_ChatroomController_update7_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/chatroom/update")))
   )
@@ -213,11 +213,11 @@ class Routes(
       "POST",
       this.prefix + """api/chatroom/update""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:13
+  // @LINE:21
   private lazy val controllers_ChatroomController_destroy8_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/chatroom/delete")))
   )
@@ -233,11 +233,11 @@ class Routes(
       "POST",
       this.prefix + """api/chatroom/delete""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:14
+  // @LINE:23
   private lazy val controllers_ChatroomController_userMessages9_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("api/chatroom/userMessages")))
   )
@@ -253,11 +253,11 @@ class Routes(
       "POST",
       this.prefix + """api/chatroom/userMessages""",
       """""",
-      Seq()
+      Seq("""nocsrf""")
     )
   )
 
-  // @LINE:17
+  // @LINE:26
   private lazy val controllers_Assets_versioned10_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""", encodeable=false)))
   )
@@ -284,69 +284,69 @@ class Routes(
         controllers_HomeController_index0_invoker.call(HomeController_0.index())
       }
   
-    // @LINE:6
+    // @LINE:7
     case controllers_HomeController_register1_route(params@_) =>
       call { 
         controllers_HomeController_register1_invoker.call(HomeController_0.register())
       }
   
-    // @LINE:7
+    // @LINE:9
     case controllers_HomeController_save2_route(params@_) =>
       call { 
         controllers_HomeController_save2_invoker.call(
           req => HomeController_0.save(req))
       }
   
-    // @LINE:8
+    // @LINE:11
     case controllers_HomeController_authenticate3_route(params@_) =>
       call { 
         controllers_HomeController_authenticate3_invoker.call(
           req => HomeController_0.authenticate(req))
       }
   
-    // @LINE:9
+    // @LINE:13
     case controllers_HomeController_logout4_route(params@_) =>
       call { 
         controllers_HomeController_logout4_invoker.call(
           req => HomeController_0.logout(req))
       }
   
-    // @LINE:10
+    // @LINE:15
     case controllers_ChatroomController_index5_route(params@_) =>
       call { 
         controllers_ChatroomController_index5_invoker.call(
           req => ChatroomController_1.index(req))
       }
   
-    // @LINE:11
+    // @LINE:17
     case controllers_ChatroomController_send6_route(params@_) =>
       call { 
         controllers_ChatroomController_send6_invoker.call(
           req => ChatroomController_1.send(req))
       }
   
-    // @LINE:12
+    // @LINE:19
     case controllers_ChatroomController_update7_route(params@_) =>
       call { 
         controllers_ChatroomController_update7_invoker.call(
           req => ChatroomController_1.update(req))
       }
   
-    // @LINE:13
+    // @LINE:21
     case controllers_ChatroomController_destroy8_route(params@_) =>
       call { 
         controllers_ChatroomController_destroy8_invoker.call(
           req => ChatroomController_1.destroy(req))
       }
   
-    // @LINE:14
+    // @LINE:23
     case controllers_ChatroomController_userMessages9_route(params@_) =>
       call { 
         controllers_ChatroomController_userMessages9_invoker.call(
           req => ChatroomController_1.userMessages(req))
       }
   
-    // @LINE:17
+    // @LINE:26
     case controllers_Assets_versioned10_route(params@_) =>
       call(params.fromPath[String]("file", None)) { (file) =>
         controllers_Assets_versioned10_invoker.call(Assets_2.versioned(file))
