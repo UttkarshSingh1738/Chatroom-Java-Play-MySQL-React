@@ -6,3 +6,4 @@
 /.bsp
 /.idea
 /target
+logs/application.log
