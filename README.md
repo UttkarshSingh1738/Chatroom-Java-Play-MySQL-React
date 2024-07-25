@@ -5,7 +5,6 @@
 ![React](https://img.shields.io/badge/React-Latest-blue.svg)
 ![sbt](https://img.shields.io/badge/sbt-1.1+-blue.svg)
 ![Java](https://img.shields.io/badge/Java-11+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Project Overview
 
